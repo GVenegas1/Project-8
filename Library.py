@@ -119,11 +119,11 @@ class Patron:
         self._fine_amount = 0.0
 
     def get_patron_id(self):
-        """returns the patron's id"""
+        """returns the patrons id"""
         return self._patron_id
 
     def get_name(self):
-        """returns the patron's name"""
+        """returns the patrons name"""
         return self._name
 
     def get_fine_amount(self):
@@ -135,11 +135,11 @@ class Patron:
         return self._checked_out_items
 
     def add_library_item(self, library_item):
-        """Adds an item to the patron's checkout list"""
+        """Adds an item to the patrons checkout list"""
         self._checked_out_items.append(library_item)
 
     def remove_library_item(self, library_item):
-        """removes an item from the patron's checkout list"""
+        """removes an item from the patrons checkout list"""
         if library_item in self._checked_out_items:
             self._checked_out_items.remove(library_item)
 
